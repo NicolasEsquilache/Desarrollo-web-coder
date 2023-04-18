@@ -448,7 +448,6 @@ hr {
 
 .container-columna {
 	display: flex;
-	border: solid 3px black;
 	flex-direction: column;
 	justify-content: space-around;
 	margin:10px 0px;
@@ -459,13 +458,15 @@ hr {
 
 .container-columna h3{
 	margin-top:20px;
+	font-size: 2rem;
 }
 
 .container-columna div {
 	border: solid 3px black;
+	background-color: beige;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 
 
@@ -511,7 +512,7 @@ hr {
 		border-radius: 200px;
 	}
 
-	.text-container {}
+	
 
 	.container-index h2 {
 		font-size: 3rem;
@@ -568,9 +569,6 @@ hr {
 	/*comienza quienes-somos.html*/
 	.nosotros-titulo{
 		font-size: 2.5rem;
-	}
-	.presentacion-nosotros{
-		
 	}
 	
 
