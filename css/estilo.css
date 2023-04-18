@@ -417,6 +417,7 @@ hr {
 	display: block;
 	text-align: center;
 	margin-bottom: 10px;
+	margin-top:10px;
 }
 
 .presentacion-nosotros {
@@ -440,7 +441,7 @@ hr {
 
 .container-servicios {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column;
 
 
 }
@@ -448,15 +449,20 @@ hr {
 .container-columna {
 	display: flex;
 	border: solid 3px black;
-	flex-flow: row wrap;
+	flex-direction: column;
 	justify-content: space-around;
+	margin:10px 0px;
+}
+.container-columna p{
+	padding:20px;
+}
 
-
+.container-columna h3{
+	margin-top:20px;
 }
 
 .container-columna div {
 	border: solid 3px black;
-	flex-basis: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -569,7 +575,16 @@ hr {
 	
 
 	/*finaliza quienes-somos.html*/
-
+	/*comienza servicios.html*/
+	.container-columna{
+		flex-direction: row;
+	}
+	.container-columna img{
+		max-width: 50vw;
+	}
+	.rev{
+		flex-direction: row-reverse;
+	}
 }
 
 /*finaliza media query para pc*/
