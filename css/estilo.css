@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+
 }
 
 body {
@@ -9,7 +11,8 @@ body {
 	background-color: rgb(240, 240, 240);
 
 	margin: 0;
-	width: 100vw;
+	
+
 
 
 }
@@ -21,7 +24,6 @@ body {
 	overflow: hidden;
 	flex-direction: column;
 	background-color: rgb(100, 100, 100);
-	width: 100vw;
 	align-items: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -322,7 +324,6 @@ img {
 hr {
 	border-width: 3px;
 	border-color: rgb(0, 0, 0);
-	width: 100vw;
 }
 
 .novedades {
@@ -480,6 +481,7 @@ hr {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	overflow: hidden;
 }
 .experiencias__fotos{
 	display: flex;
