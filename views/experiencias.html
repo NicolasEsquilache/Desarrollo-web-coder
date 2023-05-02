@@ -19,15 +19,15 @@
     <header class="cabecera">
 
         <div>
-            <h1 class="logo">Consultoria</h1>
+            <h1 class="cabecera__logo">Consultoria</h1>
         </div>
         <nav>
-            <ul class="flex-container">
-                <li class="caja"><a href="../index.html">Inicio</a></li>
-                <li class="caja"><a href="./quienes-somos.html">Quienes somos</a></li>
-                <li class="caja"><a href="./servicios.html">Servicios</a></li>
-                <li class="caja caja-select"><a href="#">Experiencias</a></li>
-                <li class="caja"><a href="./contacto.html">Contacto</a></li>
+            <ul class="cabecera__nav">
+                <li class="cabecera__caja"><a href="../index.html">Inicio</a></li>
+                <li class="cabecera__caja"><a href="./quienes-somos.html">Quienes somos</a></li>
+                <li class="cabecera__caja"><a href="./servicios.html">Servicios</a></li>
+                <li class="cabecera__caja--select"><a href="#">Experiencias</a></li>
+                <li class="cabecera__caja"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -36,7 +36,7 @@
     <!----------------------- HEADER --------------------------------->
 
     <main>
-        <h2 class="titulo__experiencias">Experiencias</h2>
+        <h2 class="titulo__experiencias nosotros__titulo">Experiencias</h2>
         <div class="experiencias__container">
             <div class="experiencias__fotos">
                 <img src="../img/DSC_5025.jpg" alt="foto uno">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rXjCAQDipRQ"
+            <iframe width="672" height="378" src="https://www.youtube.com/embed/rXjCAQDipRQ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -66,21 +66,21 @@
     <!------------------------------ footer ---------------------------------->
     <footer class="footer">
         <div>
-            <div class="group">
-                <img class="logos-footer" src="../img/ubi.png" alt="ubicacion">
+            <div class="footer__group">
+                <img class="footer__logos" src="../img/ubi.png" alt="ubicacion">
                 <p>Dirección: Calle Siempreviva 1234</p>
             </div>
-            <div class="group">
-                <img class="logos-footer" src="../img/tel.png" alt="telefono">
+            <div class="footer__group">
+                <img class="footer__logos" src="../img/tel.png" alt="telefono">
                 <p>Teléfono: +54 123 456 789</p>
             </div>
-            <div class="group">
-                <img class="logos-footer" src="../img/mail.png" alt="correo">
+            <div class="footer__group">
+                <img class="footer__logos" src="../img/mail.png" alt="correo">
                 <p>Correo electrónico: consultoradeprueba@gmail.com</p>
             </div>
         </div>
 
-        <div class="group newsletter">
+        <div class="footer__group newsletter">
             <p>Accede a nuestro newsletter y recibe nuestras últimas noticias</p>
             <form action="[URL del archivo que manejará el envío del formulario]" method="POST">
                 <input type="email" name="email" placeholder="Correo electrónico" required>

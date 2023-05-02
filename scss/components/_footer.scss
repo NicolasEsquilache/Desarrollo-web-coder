@@ -1,0 +1,94 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    @include mobile{
+        flex-direction: row;
+    }
+
+    & >:first-child{
+        margin-top: 10px;
+
+    }
+    p {
+        margin: 5px 0;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    form{
+        @include mobile{
+            width: 40vw;
+        }
+    }
+
+    input[type="email"] {
+
+        border-radius: 5px;
+        border: none;
+        width: 80vw;
+        margin: 10px;
+        @include mobile{
+            align-items: flex-start;
+            width: 40vw;
+        }
+
+    }
+
+    button[type="submit"] {
+        background-color: #fff;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    &__logos {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    flex-direction: column;
+    padding: 0px;
+    border-radius: 5px;
+    @include mobile{
+        align-items: flex-start;
+    }
+
+    p {
+        font-size: 1.2rem;
+        @include mobile{
+            margin-left: 12px;
+        }
+    }
+}

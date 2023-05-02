@@ -1,0 +1,89 @@
+.cabecera {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: rgb(100, 100, 100);
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+    @include mobile{
+        flex-direction: row;
+    }
+
+    div {
+        width: 80vw;
+        @include flex-box();
+        height: 100%;
+
+        @include mobile{
+            justify-content: flex-start;
+        }
+
+    }
+
+    nav {
+        width: 100vw;
+        top: 0;
+        right: 0;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    a {
+
+        color: rgb(0, 0, 0);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 0.8rem;
+        line-height: 1rem;
+
+        @include mobile{
+            font-size: 1.1rem;
+        }
+    }
+
+    &__logo {
+        padding: 10px;
+        cursor: default;
+        @include mobile{
+            font-size: 2.5rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        & a:hover {
+            color: #fff;
+        }
+    }
+
+    &__caja{
+        width: auto;
+        font-size: .25em;
+        height: 15px;
+        padding: 0px 0px;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        margin: 5px;
+        font-weight: bold;
+    
+        &--select{
+            @extend .cabecera__caja;
+            text-decoration: underline;
+            
+        }
+    }
+}

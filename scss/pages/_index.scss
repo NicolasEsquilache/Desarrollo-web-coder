@@ -1,0 +1,153 @@
+.cont-index {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+
+    @include mobile {
+        flex-direction: row;
+    }
+
+    p {
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 25px;
+
+        @include mobile {
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+
+    }
+
+    h2 {
+
+        align-items: flex-start;
+        font-size: 2rem;
+
+        @include mobile {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    a {
+        background-color: #007bff;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 2rem;
+        line-height: 3rem;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 200px;
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    &__cont-text {
+        flex-basis: 50%;
+        @include flex-box(space-evenly, center);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__cont-img {
+
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 200px;
+        padding: 20px;
+
+        img {
+            display: block;
+        }
+
+        @include mobile{
+            flex: 1;
+            @include flex-box();
+            overflow: hidden;
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+
+            img {
+                border-radius: 200px;
+            }
+        }
+    }
+}
+
+.titulo-secciones {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-left: 40px;
+
+    @include mobile {
+        margin-top: 33px;
+    }
+}
+
+.logos-empresas {
+    @include flex-box(space-evenly, center);
+    flex-wrap: wrap;
+    width: 200;
+    flex-direction: row;
+    margin-bottom: 45px;
+
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: row;
+
+    }
+
+    article {
+        border: solid 5px black;
+        border-radius: 20px;
+        width: 90vw;
+        margin: 5px;
+
+        @include mobile {
+            border: solid 5px black;
+            border-radius: 20px;
+            width: 30vw;
+            margin: 50px;
+        }
+    }
+
+    h3 {
+
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+    }
+
+    p {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+}
