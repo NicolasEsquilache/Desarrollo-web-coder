@@ -9,7 +9,7 @@
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
-    @include mobile{
+    @include pc{
         flex-direction: row;
     }
 
@@ -28,7 +28,7 @@
     }
 
     form{
-        @include mobile{
+        @include pc{
             width: 40vw;
         }
     }
@@ -39,7 +39,7 @@
         border: none;
         width: 80vw;
         margin: 10px;
-        @include mobile{
+        @include pc{
             align-items: flex-start;
             width: 40vw;
         }
@@ -56,8 +56,15 @@
         margin-left: 10px;
         border-radius: 5px;
         border: none;
-        cursor: pointer;
+        cursor: pointer;   
+        &:hover{
+            @include pc{
+                -webkit-animation: vibrate-1 0.3s linear infinite both;
+                animation: vibrate-1 0.3s linear infinite both;
+            }
+        }
     }
+    
 
     &__group {
         display: flex;
@@ -72,6 +79,7 @@
         vertical-align: middle;
         text-align: center;
     }
+
 }
 
 .newsletter {
@@ -81,13 +89,13 @@
     flex-direction: column;
     padding: 0px;
     border-radius: 5px;
-    @include mobile{
+    @include pc{
         align-items: flex-start;
     }
 
     p {
         font-size: 1.2rem;
-        @include mobile{
+        @include pc{
             margin-left: 12px;
         }
     }

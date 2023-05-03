@@ -9,7 +9,7 @@
     text-decoration: none;
     font-size: 1.1rem;
 
-    @include mobile{
+    @include pc{
         flex-direction: row;
     }
 
@@ -18,7 +18,7 @@
         @include flex-box();
         height: 100%;
 
-        @include mobile{
+        @include pc{
             justify-content: flex-start;
         }
 
@@ -42,7 +42,7 @@
         font-size: 0.8rem;
         line-height: 1rem;
 
-        @include mobile{
+        @include pc{
             font-size: 1.1rem;
         }
     }
@@ -50,7 +50,7 @@
     &__logo {
         padding: 10px;
         cursor: default;
-        @include mobile{
+        @include pc{
             font-size: 2.5rem;
         }
     }

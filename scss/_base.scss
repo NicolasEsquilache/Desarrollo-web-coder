@@ -13,12 +13,6 @@ $MQ-big: 1200px;
 }
 
 @mixin mobile {
-    @media (min-width:$MQ-small) {
-        @content;
-    }
-
-}
-@mixin tablet {
     @media (min-width:$MQ-medium) {
         @content;
     }

@@ -1,9 +1,9 @@
 .experiencias__container {
-    display: flex;
-    flex-direction: row;
+    @include flex-box;
+    flex-direction: column;
     flex-wrap: nowrap;
     overflow: hidden;
-    @include mobile{
+    @include pc{
         flex-direction: column;
         flex-wrap: nowrap;
     }
@@ -12,23 +12,28 @@
 .experiencias__fotos {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 95vw;
     max-height: 600px;
-    @include mobile{
+    @include pc{
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: center;
+        width:50vw;
     }
 }
 
 .experiencias__texto {
-    width: 50vw;
+    width: 90vw;
     @include flex-box(center, flex-start);
-    @include mobile{
+    
+    @include pc{
         width: 100vw;
         padding: 20px;
     }
     p {
         padding: 5px 30px;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
 }
 .video {
