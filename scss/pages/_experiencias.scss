@@ -1,0 +1,36 @@
+.experiencias__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    @include mobile{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.experiencias__fotos {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-height: 600px;
+    @include mobile{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.experiencias__texto {
+    width: 50vw;
+    @include flex-box(center, flex-start);
+    @include mobile{
+        width: 100vw;
+        padding: 20px;
+    }
+    p {
+        padding: 5px 30px;
+    }
+}
+.video {
+    @include flex-box();
+}

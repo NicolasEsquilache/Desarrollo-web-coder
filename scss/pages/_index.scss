@@ -48,6 +48,14 @@
         cursor: pointer;
         display: flex;
 
+        &:hover {
+
+            -webkit-animation: vibrate-1 0.3s linear infinite both;
+            animation: vibrate-1 0.3s linear infinite both;
+
+        }
+
+
     }
 
     &__cont-text {
@@ -74,7 +82,7 @@
             display: block;
         }
 
-        @include mobile{
+        @include mobile {
             flex: 1;
             @include flex-box();
             overflow: hidden;
@@ -122,9 +130,14 @@
 
     article {
         border: solid 5px black;
+        background-color: rgb(255, 255, 255);
         border-radius: 20px;
         width: 90vw;
         margin: 5px;
+        &:hover{
+            -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+        }
 
         @include mobile {
             border: solid 5px black;
