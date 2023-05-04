@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    font-size: 1.1rem;
+    
 
     @include pc{
         flex-direction: row;
@@ -39,19 +39,23 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1rem;
 
         @include pc{
-            font-size: 1.1rem;
+            font-size: 1.4rem;
         }
     }
 
     &__logo {
-        padding: 10px;
+        font-size: 1.8rem;
+        padding: 5px 0 0 0;
+        
         cursor: default;
         @include pc{
             font-size: 2.5rem;
+            padding: 10px;
+            margin-left: 20px;
         }
     }
 
@@ -63,6 +67,7 @@
         list-style: none;
         padding: 0;
         width: 100%;
+    
 
         & a:hover {
             color: #fff;
@@ -71,7 +76,6 @@
 
     &__caja{
         width: auto;
-        font-size: .25em;
         height: 15px;
         padding: 0px 0px;
         text-align: center;

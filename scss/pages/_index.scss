@@ -50,8 +50,7 @@
 
         &:hover {
 
-            -webkit-animation: vibrate-1 0.3s linear infinite both;
-            animation: vibrate-1 0.3s linear infinite both;
+            
 
         }
 
@@ -102,11 +101,15 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     text-decoration: none;
-    font-size: 2.5rem;
-    margin-left: 40px;
+    font-size: 2rem;
+    text-align: center;
+    
 
     @include pc {
         margin-top: 33px;
+        font-size: 2.5rem;
+        text-align:start;
+        margin-left: 40px;
     }
 }
 
