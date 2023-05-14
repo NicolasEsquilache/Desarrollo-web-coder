@@ -62,10 +62,8 @@
         cursor: pointer;
 
         &:hover {
-            @include pc {
-                -webkit-animation: vibrate-1 0.3s linear infinite both;
-                animation: vibrate-1 0.3s linear infinite both;
-            }
+            -webkit-animation: vibrate-1 0.3s linear infinite both;
+            animation: vibrate-1 0.3s linear infinite both;
         }
     }
 
