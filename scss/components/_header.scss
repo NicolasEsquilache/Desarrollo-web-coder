@@ -7,9 +7,9 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    
 
-    @include pc{
+
+    @include pc {
         flex-direction: row;
     }
 
@@ -18,7 +18,7 @@
         @include flex-box();
         height: 100%;
 
-        @include pc{
+        @include pc {
             justify-content: flex-start;
         }
 
@@ -42,7 +42,7 @@
         font-size: 0.9rem;
         line-height: 1rem;
 
-        @include pc{
+        @include pc {
             font-size: 1.4rem;
         }
     }
@@ -50,9 +50,10 @@
     &__logo {
         font-size: 1.8rem;
         padding: 5px 0 0 0;
-        
+
         cursor: default;
-        @include pc{
+
+        @include pc {
             font-size: 2.5rem;
             padding: 10px;
             margin-left: 20px;
@@ -67,14 +68,14 @@
         list-style: none;
         padding: 0;
         width: 100%;
-    
+
 
         & a:hover {
             color: #fff;
         }
     }
 
-    &__caja{
+    &__caja {
         width: auto;
         height: 15px;
         padding: 0px 0px;
@@ -83,11 +84,11 @@
         border-radius: 20px;
         margin: 5px;
         font-weight: bold;
-    
-        &--select{
+
+        &--select {
             @extend .cabecera__caja;
             text-decoration: underline;
-            
+
         }
     }
 }

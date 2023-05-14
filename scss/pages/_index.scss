@@ -47,14 +47,6 @@
         border-radius: 200px;
         cursor: pointer;
         display: flex;
-
-        &:hover {
-
-            
-
-        }
-
-
     }
 
     &__cont-text {
@@ -67,14 +59,12 @@
 
     &__cont-img {
 
-        align-items: center;
-        justify-content: center;
         flex: 1;
         width: 100%;
         overflow: hidden;
         max-width: 100%;
         object-fit: contain;
-        
+
         padding: 20px;
 
         img {
@@ -103,12 +93,12 @@
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    
+
 
     @include pc {
         margin-top: 33px;
         font-size: 2.5rem;
-        text-align:start;
+        text-align: start;
         margin-left: 40px;
     }
 }
@@ -120,12 +110,19 @@
     flex-direction: row;
     margin-bottom: 45px;
 
+    & div {
+        padding: 0 15px;
+    }
 }
 
 .novedades {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+    }
 
     @include pc {
         flex-direction: row;
@@ -138,15 +135,30 @@
         border-radius: 20px;
         width: 90vw;
         margin: 10px;
-        height: 480px;
-        &:hover{
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            transform: scale(1.2)
-        }
+        min-height: 480px;
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        /** Chrome & Safari **/
+        -moz-transition: all .2s linear;
+        /** Firefox **/
+        -o-transition: all .2s linear;
+        /** Opera **/
 
+        &:hover {
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+
+            @include pc {
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+        }
 
         @include pc {
             border: solid 5px black;
@@ -163,6 +175,9 @@
         margin-top: 7px;
         margin-bottom: 7px;
 
+        @include tablet {
+            min-height: 60px;
+        }
     }
 
     p {

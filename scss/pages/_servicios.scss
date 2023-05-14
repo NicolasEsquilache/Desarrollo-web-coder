@@ -3,12 +3,24 @@
     flex-flow: column;
     padding: 0 30px;
 
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
     &__columna {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        overflow: hidden;
         margin: 10px 0px;
+        border: solid 3px black;
+        border-radius: 10%;
+
+        @include tablet {
+            max-width: 40vw;
+        }
 
         @include pc {
             flex-direction: row;
@@ -21,15 +33,22 @@
         h3 {
             margin-top: 20px;
             font-size: 2rem;
+            padding: 0 5px;
+            text-align: center;
         }
 
         div {
-            border: solid 3px black;
+            border-top: solid 3px black;
             background-color: beige;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+
+            @include pc {
+                border-top: none;
+                border-left: solid 3px black;
+            }
         }
 
         @include pc {
@@ -38,9 +57,20 @@
             }
         }
 
-        
+
     }
 }
-.rev{
-    flex-direction: row-reverse;
+
+.rev {
+    @include pc {
+        flex-direction: row-reverse;
+    }
+
+    & div {
+        @include pc {
+            border-right: solid 3px black;
+            border-left: none;
+        }
+
+    }
 }
